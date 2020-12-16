@@ -12,36 +12,30 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-size: calc(8px + 1vmin);
-}
-h1 {
+  font-size: calc(16px + 1vmin);
   color: #336860;
 }
-#info {
-  background-color: honeydew;
-  min-height: 4em;
+#info, #status {
+  min-height: 1em;
   width: 90%;
   margin: 1em auto;
+  text-align: center;
 }
 #container-cells {
   background-color: #4E9E92;
   display: grid;
   grid-template: repeat(3, 6em) / repeat(3, 6em);
-  width: 20em;
-  height: 20em;
-  column-gap: 1em;
-  row-gap: 1em;
+  width: 19em;
+  height: 19em;
+  column-gap: .5em;
+  row-gap: .5em;
 }
 .cell {
   background-color: #5DBAAC;
+  color: #336860;
+  font-size: calc(72px + 1vmin);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#status {
-  background-color: honeydew;
-  min-height: 4em;
-  width: 90%;
-  margin: 1em auto;
 }
